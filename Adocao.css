@@ -1,0 +1,170 @@
+body{
+    background-color: rgb(0, 116, 228); /* Azul claro */
+    color: #333; /* Cor do texto principal */
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Estilos do Header */
+.headertela2{
+    background-color: #003C7B; /* Azul escuro para o cabeçalho */
+    color: #fff; /* Texto branco no cabeçalho */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos dos Títulos */
+h1, h2 {
+    color: #000000; /* Azul escuro para os títulos */
+    text-align: center;
+
+}
+
+/* Estilos da Barra de Navegação */
+.whatsapp-link {
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 1px 1px 2px #888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.whatsapp-link i {
+    font-size: 20px; /* Ajuste o tamanho do ícone conforme necessário */
+}
+
+.whatsapp-link:hover {
+    background: #13c43f;
+}
+
+.instagram-link {
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+    background: #dd3856;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.instagram-link:hover {
+    background: #f09433;
+}
+.navbar {
+    color: #fff;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 1000;
+    background-color: #000; 
+    height: 120px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+  
+.navbar img {
+    margin-right: 15px; /* Espaçamento à direita da imagem */
+}
+  
+.navbar-brand h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff; /* Altere a cor do texto do logotipo como desejado */
+}
+  
+.navbar-nav .nav-item .a{
+    color: #fff;
+    margin-right: 10px; /* Espaçamento entre os itens do menu */
+}
+  
+.nav-link{
+    color: #ffffff; /* Altere a cor dos links do menu como desejado */
+}
+.nav-link :hover{
+    color: #ff0000; /* Altere a cor dos links do menu como desejado */
+}
+  
+  /* O restante do seu código CSS permanece o mesmo */
+  
+  /* Se desejar adicionar margem superior para o conteúdo para evitar que ele fique por trás da navbar */
+  /* Adicione o seguinte CSS à seção de estilos do seu conteúdo */
+.content {
+    margin-top: 80px; /* Ajuste o valor conforme necessário para a altura da navbar */
+}
+  
+
+/* Estilos das Seções */
+section {
+    padding: 30px;
+    margin: 20px 0;
+    background-color: #fff; /* Fundo branco para as seções */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.adoption-button {
+    background-color: #003C7B; /* Azul escuro para os botões */
+    color: #fff; /* Texto branco nos botões */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.adoption-button:hover {
+    background-color: #001E3D; /* Altera a cor ao passar o mouse para um tom mais escuro */
+}
+
+/* Estilos do Rodapé */
+footer {
+    background-color: #003C7B; /* Azul escuro para o rodapé */
+    color: #fff; /* Texto branco no rodapé */
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilos para Links */
+a {
+    color: #0074E4; /* Azul mais claro para links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Adicione um sublinhado ao passar o mouse sobre links */
+}
+.donation-section {
+    text-align: center;
+}
+
+.donation-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.donation-option {
+    padding: 20px;
+    border: 2px solid #003C7B;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.donation-option:hover {
+    background-color: #003C7B;
+    color: #fff;
+}
+
+.donation-option img {
+    width: 100px;
+}
