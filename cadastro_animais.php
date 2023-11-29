@@ -7,6 +7,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $porte = $_POST["porte"];
     $microchip = $_POST["microchip"];
 
+    // Handle image upload
+    $imagem = $_FILES["imagem"]["name"];
+    $imagem_temp = $_FILES["imagem"]["tmp_name"];
+    $imagem_destino = "C:\\xampp\\htdocs\\Canil-Alpha\\imagem\\" . $imagem;
+
+    move_uploaded_file($imagem_temp, $imagem_destino);
+
     // Conectar ao banco de dados (substitua as variáveis conforme necessário)
     $hostname = "localhost";
     $database = "canildb";
@@ -20,9 +27,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Preparar a consulta SQL para inserir os dados
-    $query = "INSERT INTO animais (nome, raca, porte, microchip) VALUES (?, ?, ?, ?)";
+    $query = "INSERT INTO animais (nome, raca, porte, microchip, nIMAGEM) VALUES (?, ?, ?, ?, ?)";
     $stmt = $mysqli->prepare($query);
-    $stmt->bind_param("ssss", $nome, $raca, $porte, $microchip);
+    $stmt->bind_param("sssss", $nome, $raca, $porte, $microchip, $imagem);
 
     // Executar a consulta e verificar se foi bem-sucedida
     if ($stmt->execute()) {
@@ -36,6 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mysqli->close();
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -55,7 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     ?>
 
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required><br>
 
@@ -71,6 +79,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <label for="microchip">Microchip:</label>
         <input type="text" id="microchip" name="microchip" required><br>
+
+        <label for="imagem">Imagem:</label>
+        <input type="file" id="imagem" name="imagem" accept="image/*" required><br>
+
 
         <input type="submit" value="Cadastrar">
     </form>
