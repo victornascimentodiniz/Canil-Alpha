@@ -133,6 +133,7 @@ function exibirMensagemAgradecimento() {
     window.location.href = 'agradecimento.php';
 }
 </script>
+<div class="final" >Copyright © 2023 Canil Lagoa Formosa Município de Lagoa Formosa - MG</div>
 
 </body>
 </html>

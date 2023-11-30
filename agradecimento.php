@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
     <link rel="icon" type="IMG/images.png" href="IMG/images.png" sizes="16x16">
-    <link rel="stylesheet " href="estilo.css">
+    <link rel="stylesheet " href="agradecimento.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <title>Canil Lagoa Formosa</title>
   </head>
@@ -87,17 +87,13 @@ Preparação para emergências<br></p>
 
     <h2>Local do Canil:</h2>
     <div id="map">
-        <iframe
-            width="100%"
-            height="400"
-            frameborder="0"
-            scrolling="no"
-            marginheight="0"
-            marginwidth="0"
-            src="https://www.google.com/maps/embed/v1/place?q=Canil&key=YOUR_API_KEY"
-        ></iframe>
-    </div>
-    <p>Agradecemos muito por escolher dar um lar para um animalzinho! Se precisar de mais informações, entre em contato conosco.</p>
+    <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678901234567!2d-46.387657676148955!3d-18.781771861727854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTg3LCDQuNC10YDQstC40Lkg0LrQvtC80L7Qv9C-0YHRgtC40Lkg0JzQvtGB0LrQstC40Y8!5e0!3m2!1spt-BR!2sbr!4v1641481598475!5m2!1spt-BR!2sbr"
+  width="600"
+  height="450"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+></iframe>
 
-      </body>
-</html>
+
