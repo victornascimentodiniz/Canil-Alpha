@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Fechar a conexão e a declaração
     $stmt->close();
     $mysqli->close();
-}
+} 
 ?>
 
 
