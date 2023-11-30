@@ -50,11 +50,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+    <link rel="icon" type="IMG/images.png" href="IMG/images.png" sizes="16x16">
     <link rel="stylesheet" href="cadastro.css">
     <title>Cadastro de Animal</title>
 </head>
 <body>
-    <h2>Cadastro de Animal</h2>
+<div class="container text-center mt-4">
+<h2>Cadastro de Animal</h2></div>
+<style>
+        p {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+    </style>
+<p><a href="index.html">Voltar à Página Inicial</a></p>
     
     <?php
     // Exibir a mensagem se houver uma

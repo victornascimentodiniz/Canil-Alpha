@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(0, 116, 228);
+    background-color: rgb(51, 51, 54);
 }
 h2{
     color: rgb(0, 0, 0);
@@ -8,7 +8,7 @@ h2{
 }
 .img-fundo{
     background-image: url(IMG/Paw\ bg.jpg);
-    color: aqua;
+    color: rgb(0, 0, 0);
 }
 .whatsapp-link{
     width: 40px;
@@ -64,7 +64,7 @@ h2{
     color: #fff; /* Altere a cor dos links do menu como desejado */
 }
 .dropdown-menu{
-    background-color: rgb(17, 20, 204);
+    background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
 }
 .dropdown-item{

@@ -1,50 +1,60 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+.whatsapp-link{
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 1px 1px 2px #888;
 }
-
-div {
-    background-color: #fff;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.whatsapp-link:hover {
+    background: #13c43f;
 }
-
-h2 {
-    color: #333;
-}
-
-p {
-    color: #666;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px; /* Adiciona espaço entre a imagem e os botões */
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Estilo do botão Bootstrap */
-.btn-adotar {
-    background-color: #4caf50;
+.instagram-link {
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+    background: #dd3856;
     color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
 
-.btn-adotar:hover {
-    background-color: #45a049;
+.instagram-link:hover {
+    background: #f09433;
+}
+.navbar {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 100;
+    right: 100;
+    z-index: 1000;
+    height: 120px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.navbar-brand{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 255, 255);
+}
+.navbar-nav .nav-item {
+    margin-right: 10px; /* Espaçamento entre os itens do menu */
+}
+  
+.nav-link {
+    color: #fff; /* Altere a cor dos links do menu como desejado */
+}
+.dropdown-menu{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.dropdown-item{
+    color: aliceblue;
 }

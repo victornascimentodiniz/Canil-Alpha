@@ -43,13 +43,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <a class="nav-link" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="exibir.php">Adoção</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="Doacao.html">Doação</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="telas.php">Gerenciamento</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="Adoção.html">Adoção</a>
               </li>
             <form class="d-flex" role="o que voce precisa">
               <input class="form-control me-2" type="o que voce precisa ?" placeholder="O que voçê precisa ?" aria-label="o que voce precisa">
